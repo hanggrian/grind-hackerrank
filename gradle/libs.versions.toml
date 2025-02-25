@@ -1,0 +1,16 @@
+[versions]
+jdk = "21"
+jre = "8"
+checkstyle = "10.21.2"
+
+[plugins]
+git-publish = "org.ajoberstar.git-publish:5.1.0"
+pages = "com.hanggrian.pages:0.1"
+
+[libraries]
+# lint
+rulebook-checkstyle = "com.hanggrian.rulebook:rulebook-checkstyle:0.1"
+# main
+gson = "com.google.code.gson:gson:2.12.1"
+# test
+truth = "com.google.truth:truth:1.4.4"

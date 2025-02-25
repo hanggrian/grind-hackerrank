@@ -1,0 +1,7 @@
+# main
+regex
+pylint
+rulebook-pylint
+# test
+pytest
+pytest-cov
