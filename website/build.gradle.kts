@@ -11,12 +11,27 @@ plugins {
 }
 
 pages {
-    minimal {
+    rootProject.layout.projectDirectory
+        .dir("docs")
+        .asFile
+        .listFiles()
+        ?.forEach { content("${it.nameWithoutExtension}.html", it) }
+
+    styles.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css")
+    scripts.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js")
+    scripts.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js")
+
+    cayman {
         authorName = developerName
         authorUrl = developerUrl
         projectName = releaseArtifact
         projectDescription = releaseDescription
         projectUrl = releaseUrl
+
+        darkMode = true
+        colorPrimary = "#2ec866"
+        colorSecondary = "#6687ff"
+        colorSecondaryContainer = "#6687ff"
     }
 }
 
