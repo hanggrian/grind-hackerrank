@@ -19,3 +19,8 @@ max_line_length = 100
 ij_java_use_single_class_imports = true
 ij_java_class_count_to_use_import_on_demand = 99
 ij_java_names_count_to_use_import_on_demand = 99
+
+[*.{js,ts,tsx}]
+ij_continuation_indent_size = 4
+ij_javascript_imports_wrap = off
+ij_typescript_imports_wrap = off

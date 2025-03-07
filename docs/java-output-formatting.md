@@ -26,31 +26,6 @@
 > The second column contains the integer, expressed in exactly \\(3\\) digits;
   if the original input has less than three digits, you must pad your output's
   leading digits with zeroes.
->
-> **Sample Input**
->
-> ```
-> java 100
-> cpp 65
-> python 50
-> ```
->
-> **Sample Output**
->
-> ```
-> ================================
-> java           100
-> cpp            065
-> python         050
-> ================================
-> ```
->
-> **Explanation**
->
-> Each String is left-justified with trailing whitespace through the first
-  \\(15\\) characters. The leading digit of the integer is the \\(16^{th}\\)
-  character, and each integer that was less than \\(3\\) digits now has leading
-  zeroes.
 
 - [Problem](https://www.hackerrank.com/challenges/java-output-formatting/)
-- [Solutions](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaOutputFormatting.java)
+- [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaOutputFormatting.java)

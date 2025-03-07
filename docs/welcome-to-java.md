@@ -24,13 +24,6 @@
 >
 > 1.  Print `Hello, World.` on the first line.
 > 1.  Print `Hello, Java.` on the second line.
->
-> **Sample Output**
->
-> ```
-> Hello, World.
-> Hello, Java.
-> ```
 
 - [Problem](https://www.hackerrank.com/challenges/welcome-to-java/)
-- [Solutions](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/WelcomeToJava.java)
+- [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/WelcomeToJava.java)

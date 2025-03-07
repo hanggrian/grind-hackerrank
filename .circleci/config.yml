@@ -6,7 +6,7 @@ orbs:
 executors:
   linux:
     docker:
-      - image: hanggrian/cimg-multiplatform:openjdk21.0-python3.13
+      - image: hanggrian/cimg-multiplatform:openjdk21.0-python3.13-node
 
 jobs:
   upload-coverage:
@@ -15,6 +15,7 @@ jobs:
       - checkout
       - run: ./gradlew test jacocoTestReport
       - run: pip install -r requirements.txt && pytest --cov .
+      - run: npm install && npm test && npm run coverage
       - codecov/upload
 
 workflows:

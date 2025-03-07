@@ -37,22 +37,6 @@
   newline character for that line of integer input is still queued in the input
   buffer and the next nextLine() will be reading the remainder of the integer
   line (which is empty).
->
-> **Sample Input**
->
-> ```
-> 42
-> 3.1415
-> Welcome to HackerRank's Java tutorials!
-> ```
->
-> **Sample Output**
->
-> ```
-> String: Welcome to HackerRank's Java tutorials!
-> Double: 3.1415
-> Int: 42
-> ```
 
 - [Problem](https://www.hackerrank.com/challenges/java-stdin-stdout/)
-- [Solutions](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaStdinStdout.java)
+- [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaStdinStdout2.java)

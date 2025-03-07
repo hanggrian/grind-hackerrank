@@ -7,10 +7,14 @@
 build/
 local.properties
 
+# Draw.io
+*.drawio.bkp
+
 # IntelliJ
 *.iml
 .idea/
 out/
+.kotlin/
 
 # PyCharm
 .venv/
@@ -19,5 +23,7 @@ __pycache__/
 *.egg-info/
 **/.coverage
 
-# Draw.io
-*.drawio.bkp
+# WebStorm
+node_modules/
+coverage/
+dist/

@@ -1,10 +1,10 @@
 package concepts;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Solution {
-    public final List<String> prints = new ArrayList<>();
+    public final List<String> prints = new LinkedList<>();
 
     public void println(String format, Object... args) {
         println(String.format(format, args));

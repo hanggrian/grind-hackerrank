@@ -18,8 +18,10 @@ pages {
         ?.forEach { content("${it.nameWithoutExtension}.html", it) }
 
     styles.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css")
-    scripts.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js")
-    scripts.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js")
+    scripts.addAll(
+        "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js",
+    )
 
     cayman {
         authorName = developerName

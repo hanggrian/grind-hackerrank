@@ -34,12 +34,6 @@
 > **Output Format**
 >
 > Print `Hello, World!` to stdout.
->
-> **Sample Output 0**
->
-> ```
-> Hello, World!
-> ```
 
 - [Problem](https://www.hackerrank.com/challenges/py-hello-world/)
-- [Solutions](https://github.com/hanggrian/grind-hackerrank/blob/main/python/src/py_hello_world.py)
+- [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/python/src/py_hello_world.py)
