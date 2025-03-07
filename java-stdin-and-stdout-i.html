@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>grind-hackerrank</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="#2ec866" name="theme-color">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/dark.css" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+        <!--Primary meta tags-->
+        <meta content="grind-hackerrank" name="title">
+        <meta content="Solutions to HackerRank problems" name="description">
+    </head>
+    <body>
+        <section class="page-header">
+            <h1 class="project-name">grind-hackerrank</h1>
+            <h2 class="project-tagline">Solutions to HackerRank problems</h2>
+        </section>
+        <section class="main-content">
+            <p>
+                <a href="https://hanggrian.github.io/grind-hackerrank/">&larr; Return</a>
+            </p>
+
+            <h1>
+                Java Stdin and Stdout I<sup>EASY</sup>
+            </h1>
+
+            <blockquote>
+
+                <p>
+                    Most HackerRank challenges require you to read input from <a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29">stdin</a>
+(standard input) and write output to <a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29">stdout</a>
+(standard output).
+                </p>
+
+                <p>
+                    One popular way to read input from stdin is by using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html">Scanner class</a>
+and specifying the Input Stream as System.in. For example:
+                </p>
+
+                <pre><code class="language-java">Scanner scanner = new Scanner(System.in);
+String myString = scanner.next();
+int myInt = scanner.nextInt();
+scanner.close();
+
+System.out.println("myString is: " + myString);
+System.out.println("myInt is: " + myInt);
+</code></pre>
+
+                <p>The code above creates a Scanner object named \(scanner\) and uses it to
+read a String and an int. It then closes the Scanner object because there is
+no more input to read, and prints to stdout using System.out.println(String).
+So, if our input is:</p>
+
+                <pre><code>Hi 5
+</code></pre>
+
+                <p>Our code will print:</p>
+
+                <pre><code>myString is: Hi
+myInt is: 5
+</code></pre>
+
+                <p>
+                    Alternatively, you can use the <a href="https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html">BufferedReader class</a>.
+                </p>
+
+                <p>
+                    <strong>Task</strong>
+                </p>
+
+                <p>
+                    In this challenge, you must read <strong>3</strong> integers from stdin and then print them
+to stdout. Each integer must be printed on a new line. To make the problem a
+little easier, a portion of the code is provided for you in the editor below.
+                </p>
+
+                <p>
+                    <strong>Input Format</strong>
+                </p>
+
+                <p>
+                    There are <strong>3</strong> lines of input, and each line contains a single integer.
+                </p>
+
+            </blockquote>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/">Problem</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaStdinStdout1.java">Solutions</a>
+                </li>
+
+            </ul>
+
+            <footer class="site-footer">
+                <span class="site-footer-owner"><a href="https://github.com/hanggrian/grind-hackerrank/">grind-hackerrank</a> is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a></span><span class="site-footer-credits">Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/jasonlong/cayman-theme/">jasonlong</a></span>
+            </footer>
+        </section>
+    </body>
+</html>
