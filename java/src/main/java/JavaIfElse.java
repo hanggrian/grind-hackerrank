@@ -1,9 +1,9 @@
 import concepts.ScannedSolution;
 
 class JavaIfElse extends ScannedSolution {
-    JavaIfElse(String lines) {
+    JavaIfElse(final String lines) {
         super(lines);
-        int n = scanner.nextInt();
+        final int n = scanner.nextInt();
         if (n % 2 == 1) {
             println("Weird");
         } else if (n >= 2 && n <= 5) {

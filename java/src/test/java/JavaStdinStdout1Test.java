@@ -10,11 +10,11 @@ public class JavaStdinStdout1Test {
                 + "100\n"
                 + "125";
         assertWithMessage(s)
-            .that(new JavaStdinStdout1(s).prints)
-            .containsExactly(
-                "42",
-                "100",
-                "125"
+            .that(new JavaStdinStdout1(s).getResult())
+            .isEqualTo(
+                "42\n"
+                    + "100\n"
+                    + "125\n"
             );
     }
 }

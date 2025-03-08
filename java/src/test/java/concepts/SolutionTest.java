@@ -11,11 +11,11 @@ public class SolutionTest {
         solution.println(1);
         solution.println('2');
         solution.println("%s", "3");
-        assertThat(solution.prints)
-            .containsExactly(
-                "1",
-                "2",
-                "3"
+        assertThat(solution.getResult())
+            .isEqualTo(
+                "1\n"
+                    + "2\n"
+                    + "3\n"
             );
     }
 }

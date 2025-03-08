@@ -10,13 +10,13 @@ public class JavaOutputFormattingTest {
                 + "cpp 65\n"
                 + "python 50";
         assertWithMessage(s)
-            .that(new JavaOutputFormatting(s).prints)
-            .containsExactly(
-                "================================",
-                "java           100",
-                "cpp            065",
-                "python         050",
-                "================================"
+            .that(new JavaOutputFormatting(s).getResult())
+            .isEqualTo(
+                "================================\n"
+                    + "java           100\n"
+                    + "cpp            065\n"
+                    + "python         050\n"
+                    + "================================\n"
             );
 
         s =
@@ -24,13 +24,13 @@ public class JavaOutputFormattingTest {
                 + "hackerrank 65\n"
                 + "java 10";
         assertWithMessage(s)
-            .that(new JavaOutputFormatting(s).prints)
-            .containsExactly(
-                "================================",
-                "hello          000",
-                "hackerrank     065",
-                "java           010",
-                "================================"
+            .that(new JavaOutputFormatting(s).getResult())
+            .isEqualTo(
+                "================================\n"
+                    + "hello          000\n"
+                    + "hackerrank     065\n"
+                    + "java           010\n"
+                    + "================================\n"
             );
     }
 }

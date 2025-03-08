@@ -7,12 +7,12 @@ public class JavaIfElseTest {
     public void test() {
         String s = "3";
         assertWithMessage(s)
-            .that(new JavaIfElse(s).prints)
-            .containsExactly("Weird");
+            .that(new JavaIfElse(s).getResult())
+            .isEqualTo("Weird\n");
 
         s = "24";
         assertWithMessage(s)
-            .that(new JavaIfElse(s).prints)
-            .containsExactly("Not Weird");
+            .that(new JavaIfElse(s).getResult())
+            .isEqualTo("Not Weird\n");
     }
 }

@@ -3,7 +3,7 @@ import concepts.ScannedSolution;
 class JavaOutputFormatting extends ScannedSolution {
     private static final String BORDERS = "================================";
 
-    JavaOutputFormatting(String lines) {
+    JavaOutputFormatting(final String lines) {
         super(lines);
         println(BORDERS);
         for (int i = 0; i < 3; i++) {

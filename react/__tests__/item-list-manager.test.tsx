@@ -1,62 +1,70 @@
-import {describe, expect, it} from 'vitest'
+import {beforeEach, describe, expect, it} from 'vitest'
 import '@testing-library/jest-dom';
-import {render, screen, within} from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import {render, screen} from '@testing-library/react';
+import {userEvent} from '@testing-library/user-event';
 import ItemListManager from '../src/item-list-manager';
 
 describe(
     'ItemListManager',
     () => {
+      let inputField: HTMLInputElement;
+      let addButton: HTMLElement;
+
+      beforeEach(() => {
+        const app = render(<ItemListManager/>);
+        inputField = app.getByTestId('input-field') as HTMLInputElement;
+        addButton = app.getByTestId('add-button');
+      });
+
       it(
-          'Sample interaction',
+          'adds item to the list when button is clicked',
           async () => {
-            render(<ItemListManager/>);
+            await userEvent.type(inputField, 'Test Item');
+            await userEvent.click(addButton);
 
-            await assertEmpty();
-
-            await insertItem('First Item');
-            await clickAdd();
-            assertContains('First Item');
-
-            await insertItem('Second Item');
-            await clickAdd();
-            assertContains('Second Item');
-          }
-      )
+            const listItems = screen.getAllByTestId('list-item');
+            expect(listItems).toHaveLength(1);
+            expect(listItems[0].textContent).toBe('Test Item');
+          },
+      );
       it(
-          'Skip empty entry',
+          'input field is cleared after adding an item',
           async () => {
-            render(<ItemListManager/>);
+            await userEvent.type(inputField, 'Test Item');
+            await userEvent.click(addButton);
 
-            await clickAdd();
-            await assertEmpty();
+            expect(inputField.value).toBe('');
+          },
+      );
+      it(
+          'it adds a normal item but does not add empty item to the list',
+          async () => {
+            await userEvent.type(inputField, 'Test Item');
+            await userEvent.click(addButton);
 
-            await clickAdd();
-            await insertItem(' ');
-            await assertEmpty();
-          }
-      )
-    }
-)
+            expect(inputField.value).toBe('');
 
-async function assertEmpty() {
-  expect(
-      within(
-          await screen.findByTestId('item-list'))
-          .queryAllByRole('list-item')
-          .length,
-  ).toBe(0);
-}
+            await userEvent.type(inputField, ' ');
+            await userEvent.click(addButton);
 
-async function assertContains(item: string) {
-  expect(await screen.findByTestId('item-list'))
-      .toHaveTextContent(item);
-}
+            expect(screen.queryAllByTestId('list-item'))
+                .toHaveLength(1);
+          },
+      );
+      it(
+          'adds multiple items to the list',
+          async () => {
+            await userEvent.type(inputField, 'First Item');
+            await userEvent.click(addButton);
 
-async function insertItem(item: string) {
-  await userEvent.type(await screen.findByTestId('input-field'), item);
-}
+            await userEvent.type(inputField, 'Second Item');
+            await userEvent.click(addButton);
 
-async function clickAdd() {
-  await userEvent.click(await screen.findByTestId('add-button'));
-}
+            const listItems = screen.getAllByTestId('list-item');
+            expect(listItems).toHaveLength(2);
+            expect(listItems[0].textContent).toBe('First Item');
+            expect(listItems[1].textContent).toBe('Second Item');
+          },
+      );
+    },
+);

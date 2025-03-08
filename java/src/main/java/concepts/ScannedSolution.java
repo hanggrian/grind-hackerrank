@@ -3,9 +3,15 @@ package concepts;
 import java.util.Scanner;
 
 public class ScannedSolution extends Solution {
-    public final Scanner scanner;
+    protected final Scanner scanner;
 
-    public ScannedSolution(String lines) {
+    public ScannedSolution(final String lines) {
         scanner = new Scanner(lines);
+    }
+
+    @Override
+    public final String getResult() {
+        scanner.close();
+        return super.getResult();
     }
 }
