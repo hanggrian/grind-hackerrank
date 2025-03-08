@@ -26,50 +26,55 @@
             </p>
 
             <h1>
-                Java Output Formatting<sup>EASY</sup>
+                React Article Sorting<sup>HARD</sup>
             </h1>
 
             <blockquote>
 
-                <p>Java's System.out.printf function can be used to print formatted output. The
-purpose of this exercise is to test your understanding of formatting output
-using printf.</p>
-
-                <p>To get you started, a portion of the solution is provided for you in the
-editor; you must format and print the input to complete the solution.</p>
-
-                <p>
-                    <strong>Input Format</strong>
-                </p>
-
-                <p>Every line of input will contain a String followed by an integer.</p>
-
-                <p>Each String will have a maximum of 10 alphabetic characters, and each integer
-will be in the inclusive range from \(0\) to \(999\).</p>
+                <p>Create a React application called "Article Sorting" that displays a list of
+articles and allows users to sort them based on upvotes and publication date.
+Some core functionalities have already been implemented, but the application
+is not complete. Application requirements are detailed below, and the finished
+application must pass all of the unit tests.</p>
 
                 <p>
-                    <strong>Output Format</strong>
+                    <img alt="" src="https://hrcdn.net/s3_pub/istreet-assets/cxj8qBL9QgGAMyKrRbBGDA/sorting-articles.gif">
                 </p>
 
-                <p>In each line of output, print two columns:</p>
+                <p>
+                    <strong>Detailed Requirements</strong>
+                </p>
 
-                <p>The first column contains the String and is left justified using exactly
-\(15\) characters.</p>
+                <ol>
 
-                <p>The second column contains the integer, expressed in exactly \(3\) digits;
-if the original input has less than three digits, you must pad your output's
-leading digits with zeroes.</p>
+                    <li>The Articles component takes an array of articles as a prop. Each element
+of this array is an object with three properties: a string title, a number
+upvotes, and a string date in the format YYYY-MM-DD.</li>
+
+                    <li>By default, the articles should be displayed in a table ordered by the
+number of upvotes in descending order.</li>
+
+                    <li>Clicking on the "Most Upvoted" button should reorder and display the
+articles by the number of upvotes in descending order.</li>
+
+                    <li>Clicking on the "Most Recent" button should reorder and display the
+articles by date in descending order.</li>
+
+                    <li>You can assume that each article has a unique publish date and number of
+upvotes.</li>
+
+                </ol>
 
             </blockquote>
 
             <ul>
 
                 <li>
-                    <a href="https://www.hackerrank.com/challenges/java-output-formatting/">Problem</a>
+                    <a href="https://www.hackerrank.com/challenges/react-article-sorting/">Problem</a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaOutputFormatting.java">Solution</a>
+                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/react/src/react-article-sorting.tsx">Solution</a>
                 </li>
 
             </ul>

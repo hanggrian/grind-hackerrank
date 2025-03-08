@@ -26,50 +26,65 @@
             </p>
 
             <h1>
-                Java Output Formatting<sup>EASY</sup>
+                Blog Post<sup>MEDIUM</sup>
             </h1>
 
             <blockquote>
 
-                <p>Java's System.out.printf function can be used to print formatted output. The
-purpose of this exercise is to test your understanding of formatting output
-using printf.</p>
-
-                <p>To get you started, a portion of the solution is provided for you in the
-editor; you must format and print the input to complete the solution.</p>
+                <p>Your task is to create a React application called "Blog Post" that allows
+users to create, display, and delete blog posts. The application requirements
+are detailed below, and the finished application must pass all of the unit
+tests.</p>
 
                 <p>
-                    <strong>Input Format</strong>
+                    <strong>Detailed Requirements</strong>
                 </p>
 
-                <p>Every line of input will contain a String followed by an integer.</p>
+                <ol>
 
-                <p>Each String will have a maximum of 10 alphabetic characters, and each integer
-will be in the inclusive range from \(0\) to \(999\).</p>
+                    <li>The "Blog Post" component should have two input fields: one for the post
+title and another for the post description (textarea).</li>
 
-                <p>
-                    <strong>Output Format</strong>
-                </p>
+                    <li>The application should display a "Create" button that, when clicked, adds
+a new blog post to the list of existing posts.</li>
 
-                <p>In each line of output, print two columns:</p>
+                    <li>The "Create" button should only add a post if both the title and
+description fields have values. If either field is empty, the button
+should not create a post.</li>
 
-                <p>The first column contains the String and is left justified using exactly
-\(15\) characters.</p>
+                    <li>Once a post is successfully created, both the title and description fields
+should be cleared.</li>
 
-                <p>The second column contains the integer, expressed in exactly \(3\) digits;
-if the original input has less than three digits, you must pad your output's
-leading digits with zeroes.</p>
+                    <li>The list of created blog posts should be displayed in a grid layout, with
+each post appearing inside a box.</li>
+
+                    <li>
+                        Each box should include:
+
+                        <ul>
+
+                            <li>The post's title.</li>
+
+                            <li>The post's description.</li>
+
+                            <li>A "Delete" button to remove the specific post from the list.</li>
+
+                        </ul>
+
+                    </li>
+
+                </ol>
 
             </blockquote>
 
             <ul>
 
                 <li>
-                    <a href="https://www.hackerrank.com/challenges/java-output-formatting/">Problem</a>
+                    <a href="https://www.hackerrank.com/challenges/blog-post/">Problem</a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaOutputFormatting.java">Solution</a>
+                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/react/src/blog-post.tsx">Solution</a>
                 </li>
 
             </ul>

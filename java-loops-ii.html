@@ -26,50 +26,62 @@
             </p>
 
             <h1>
-                Java Output Formatting<sup>EASY</sup>
+                Java Loops II<sup>EASY</sup>
             </h1>
 
             <blockquote>
 
-                <p>Java's System.out.printf function can be used to print formatted output. The
-purpose of this exercise is to test your understanding of formatting output
-using printf.</p>
+                <p>We use the integers \(a\), \(b\), and \(n\) to create the following
+series:</p>
 
-                <p>To get you started, a portion of the solution is provided for you in the
-editor; you must format and print the input to complete the solution.</p>
+                <p>$$
+(a + 2^0 . b), (a + 2^0 . b + 2^1 . b), \ldots, (a + 2^0 . b + 2^1 . b + \ldots + 2^{n-1} . b)
+$$</p>
+
+                <p>You are given \(q\) queries in the form of \(a\), \(b\), and \(n\).
+For each query, print the series corresponding to the given \(a\), \(b\),
+and \(n\). values as a single line of \(n\) space-separated integers.</p>
 
                 <p>
                     <strong>Input Format</strong>
                 </p>
 
-                <p>Every line of input will contain a String followed by an integer.</p>
+                <p>The first line contains an integer, \(q\), denoting the number of queries.
+Each line \(i\) of the \(q\)subsequent lines contains three
+space-separated integers describing the respective \(a_i\), \(b_i\), and
+\(n_i\) values for that query.</p>
 
-                <p>Each String will have a maximum of 10 alphabetic characters, and each integer
-will be in the inclusive range from \(0\) to \(999\).</p>
+                <p>
+                    <strong>Constraints</strong>
+                </p>
+
+                <ul>
+
+                    <li>\(0 \lt q \lt 500\)</li>
+
+                    <li>\(0 \lt a, b \lt 50\)</li>
+
+                    <li>\(1 \lt n \lt 15\)</li>
+
+                </ul>
 
                 <p>
                     <strong>Output Format</strong>
                 </p>
 
-                <p>In each line of output, print two columns:</p>
-
-                <p>The first column contains the String and is left justified using exactly
-\(15\) characters.</p>
-
-                <p>The second column contains the integer, expressed in exactly \(3\) digits;
-if the original input has less than three digits, you must pad your output's
-leading digits with zeroes.</p>
+                <p>For each query, print the corresponding series on a new line. Each series must
+be printed in order as a single line of  space-separated integers.</p>
 
             </blockquote>
 
             <ul>
 
                 <li>
-                    <a href="https://www.hackerrank.com/challenges/java-output-formatting/">Problem</a>
+                    <a href="https://www.hackerrank.com/challenges/java-loops/">Problem</a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaOutputFormatting.java">Solution</a>
+                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaLoops2.java">Solution</a>
                 </li>
 
             </ul>
