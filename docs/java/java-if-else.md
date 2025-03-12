@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Java If-Else<sup>EASY</sup>
+# Java If-Else<sup style="color: rgb(32, 215, 97);">Easy</sup>
 
 > In this challenge, we test your knowledge of using if-else conditional
   statements to automate decision-making processes. An if-else statement has the
@@ -25,18 +25,6 @@
 >
 > Complete the stub code provided in your editor to print whether or not \\(n\\)
   is weird.
->
-> **Input Format**
->
-> A single line containing a positive integer, \\(n\\).
->
-> **Constraints**
->
-> - \\(1 \le n \le 100\\)
->
-> **Output Format**
->
-> Print `Weird` if the number is weird; otherwise, print `Not Weird`.
 
 - [Problem](https://www.hackerrank.com/challenges/java-if-else/)
 - [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaIfElse.java)

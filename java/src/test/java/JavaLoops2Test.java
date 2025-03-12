@@ -2,9 +2,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
-public class JavaLoops2Test {
+public final class JavaLoops2Test {
     @Test
-    public void test() {
+    public void samples() {
         String s =
             "2\n"
                 + "0 2 10\n"

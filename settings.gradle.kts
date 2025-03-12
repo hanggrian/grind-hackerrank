@@ -6,5 +6,5 @@ dependencyResolutionManagement.repositories.mavenCentral()
 
 rootProject.name = "grind-hackerrank"
 
-include("java")
+include("java", "algorithms")
 include("website")

@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Java Stdin and Stdout I<sup>EASY</sup>
+# Java Stdin and Stdout I<sup style="color: rgb(32, 215, 97);">Easy</sup>
 
 > Most HackerRank challenges require you to read input from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29)
   (standard input) and write output to [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29)
@@ -42,10 +42,6 @@
 > In this challenge, you must read **3** integers from stdin and then print them
   to stdout. Each integer must be printed on a new line. To make the problem a
   little easier, a portion of the code is provided for you in the editor below.
->
-> **Input Format**
->
-> There are **3** lines of input, and each line contains a single integer.
 
 - [Problem](https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/)
 - [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaStdinStdout1.java)

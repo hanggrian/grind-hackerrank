@@ -1,7 +1,7 @@
 import concepts.ScannedSolution;
 import java.util.Scanner;
 
-class JavaLoops2 extends ScannedSolution {
+final class JavaLoops2 extends ScannedSolution {
     JavaLoops2(final String lines) {
         super(lines);
         while (scanner.hasNext()) {

@@ -1,6 +1,6 @@
 import concepts.ScannedSolution;
 
-class JavaOutputFormatting extends ScannedSolution {
+final class JavaOutputFormatting extends ScannedSolution {
     private static final String BORDERS = "================================";
 
     JavaOutputFormatting(final String lines) {

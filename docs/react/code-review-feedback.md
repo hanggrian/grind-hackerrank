@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Code Review Feedback<sup>MEDIUM</sup>
+# Code Review Feedback<sup style="color: rgb(219, 113, 0);">Medium</sup>
 
 > Your task is to create a React application called "Code Review Feedback" that
   tracks and manages feedback on various aspects of code quality. The component

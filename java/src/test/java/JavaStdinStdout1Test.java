@@ -2,9 +2,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
-public class JavaStdinStdout1Test {
+public final class JavaStdinStdout1Test {
     @Test
-    public void test() {
+    public void samples() {
         String s =
             "42\n"
                 + "100\n"

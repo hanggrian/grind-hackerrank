@@ -4,9 +4,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertThat;
 
-public class SolutionTest {
+public final class SolutionTest {
     @Test
-    public void test() {
+    public void samples() {
         Solution solution = new Solution();
         solution.println(1);
         solution.println('2');

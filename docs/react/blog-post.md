@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Blog Post<sup>MEDIUM</sup>
+# Blog Post<sup style="color: rgb(219, 113, 0);">Medium</sup>
 
 > Your task is to create a React application called "Blog Post" that allows
   users to create, display, and delete blog posts. The application requirements

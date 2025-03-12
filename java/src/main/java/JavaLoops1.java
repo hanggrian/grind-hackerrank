@@ -1,6 +1,6 @@
 import concepts.ScannedSolution;
 
-class JavaLoops1 extends ScannedSolution {
+final class JavaLoops1 extends ScannedSolution {
     JavaLoops1(final String lines) {
         super(lines);
         final int n = scanner.nextInt();

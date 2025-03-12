@@ -2,9 +2,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
-public class JavaOutputFormattingTest {
+public final class JavaOutputFormattingTest {
     @Test
-    public void test() {
+    public void samples() {
         String s =
             "java 100\n"
                 + "cpp 65\n"

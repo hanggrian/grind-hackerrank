@@ -2,9 +2,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
-public class JavaLoops1Test {
+public final class JavaLoops1Test {
     @Test
-    public void test() {
+    public void samples() {
         String s = "2";
         assertWithMessage(s)
             .that(new JavaLoops1(s).getResult())

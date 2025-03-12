@@ -15,6 +15,7 @@ pages {
         .dir("docs")
         .asFile
         .listFiles()
+        ?.flatMap { it.listFiles()?.toList() ?: emptyList() }
         ?.forEach { content("${it.nameWithoutExtension}.html", it) }
 
     styles.add("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css")

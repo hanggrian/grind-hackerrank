@@ -1,6 +1,6 @@
 import concepts.ScannedSolution;
 
-class JavaIfElse extends ScannedSolution {
+final class JavaIfElse extends ScannedSolution {
     JavaIfElse(final String lines) {
         super(lines);
         final int n = scanner.nextInt();

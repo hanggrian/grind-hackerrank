@@ -2,9 +2,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
-public class JavaIfElseTest {
+public final class JavaIfElseTest {
     @Test
-    public void test() {
+    public void samples() {
         String s = "3";
         assertWithMessage(s)
             .that(new JavaIfElse(s).getResult())

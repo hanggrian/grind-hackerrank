@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Item List Manager<sup>MEDIUM</sup>
+# Item List Manager<sup style="color: rgb(219, 113, 0);">Medium</sup>
 
 > You are tasked with creating a simple React application called "Item List
   Manager" that displays a list of items and allows users to add new items to

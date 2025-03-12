@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# React Article Sorting<sup>HARD</sup>
+# React Article Sorting<sup style="color: rgb(255, 81, 107);">Hard</sup>
 
 > Create a React application called "Article Sorting" that displays a list of
   articles and allows users to sort them based on upvotes and publication date.

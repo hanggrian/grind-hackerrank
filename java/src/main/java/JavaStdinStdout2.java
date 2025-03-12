@@ -1,6 +1,6 @@
 import concepts.ScannedSolution;
 
-class JavaStdinStdout2 extends ScannedSolution {
+final class JavaStdinStdout2 extends ScannedSolution {
     JavaStdinStdout2(final String lines) {
         super(lines);
         final int i = Integer.parseInt(scanner.nextLine());

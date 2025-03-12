@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# React Contact Form<sup>MEDIUM</sup>
+# React Contact Form<sup style="color: rgb(219, 113, 0);">Medium</sup>
 
 > You need to create a simple React application called "Contact Form" that
   collects user information and displays it below the form upon submission. This

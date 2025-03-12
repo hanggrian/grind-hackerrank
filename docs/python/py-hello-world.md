@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Say "Hello, World!" With Python<sup>EASY</sup>
+# Say "Hello, World!" With Python<sup style="color: rgb(32, 215, 97);">Easy</sup>
 
 > <small>
 >   Check
@@ -26,14 +26,6 @@
 >
 > The above code will print `Hello, World!` on your screen. Try it yourself in
   the editor below!
->
-> **Input Format**
->
-> You do not need to read any input in this challenge.
->
-> **Output Format**
->
-> Print `Hello, World!` to stdout.
 
 - [Problem](https://www.hackerrank.com/challenges/py-hello-world/)
 - [Solution](https://github.com/hanggrian/grind-hackerrank/blob/main/python/src/py_hello_world.py)

@@ -2,9 +2,9 @@ import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertThat;
 
-public class WelcomeToJavaTest {
+public final class WelcomeToJavaTest {
     @Test
-    public void test() {
+    public void samples() {
         assertThat(new WelcomeToJava().getResult())
             .isEqualTo(
                 "Hello, World.\n"

@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-hackerrank/)
 
-# Patient Medical Records<sup>MEDIUM</sup>
+# Patient Medical Records<sup style="color: rgb(219, 113, 0);">Medium</sup>
 
 > In this challenge, you will create a React application called "Patient Medical
   Records" that allows users to view and cycle through patients' medical
