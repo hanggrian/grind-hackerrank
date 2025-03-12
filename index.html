@@ -35,78 +35,525 @@
                 <img alt="The project logo." src="https://github.com/hanggrian/grind-hackerrank/raw/assets/logo.png">
             </p>
             
-            <p>Solutions to HackerRank problems.</p>
+            <p>Solutions and visual explanations to HackerRank problems</p>
             
-            <h2>Java</h2>
+            <h2>Problems</h2>
+            
+            <style>
+  /* hotfix to show arrow toggle on 'block' layout */
+  details summary {
+    display: list-item;
+  }
+
+  sup[for="easy"]::after {
+    color: rgb(32, 215, 97);
+    content: "Easy";
+  }
+
+  sup[for="medium"]::after {
+    color: rgb(219, 113, 0);
+    content: "Medium";
+  }
+
+  sup[for="hard"]::after {
+    color: rgb(255, 81, 107);
+    content: "Hard";
+  }
+</style>
+            
+            <blockquote>
+                
+                <h4>Legend</h4>
+                
+                <ul>
+                    
+                    <li>~~Strikethrough:~~ Problems outside HackerRank.</li>
+                    
+                    <li>Normal: Unsolved problems.</li>
+                    
+                    <li>
+                        <a href="#">Link</a>: Solution available.
+                    </li>
+                    
+                    <li>
+                        <strong><a href="#">Bold Link</a>:</strong> Solution with graphics.
+                    </li>
+                    
+                    <li>
+                        <sup for="easy"></sup>, <sup for="medium"></sup>, <sup for="hard"></sup>:
+Problem difficulty level.
+                    </li>
+                    
+                </ul>
+                
+            </blockquote>
+            
+            <h2>Unofficial listing</h2>
+            
+            <blockquote>
+                  
+                <details>
+                      
+                    <summary>
+                        <b>Meta Coursework</b>
+                    </summary>
+                    
+                    <p>
+                        <a href="https://www.metacareers.com/swe-prep-techscreen/">Visit problem set</a>
+                    </p>
+                    
+                    <ul>
+                        
+                        <li>
+                            Topic 1 &mdash; Arrays &amp; String
+
+                            <ul>
+                                
+                                <li>
+                                    <a href="https://hanggrian.github.io/grind-hackerrank/a-very-big-sum">A Very Big Sum<sup for="easy"></sup></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://hanggrian.github.io/grind-hackerrank/designer-pdf-viewer"><strong>Designer PDF Viewer<sup for="easy"></sup></strong></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://hanggrian.github.io/grind-hackerrank/array-left-rotation"><strong>Array Left Rotation<sup for="easy"></sup></strong></a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 2 &mdash; Lists
+
+                            <ul>
+                                
+                                <li>
+                                    Insert a node at a specific position in a linked list<sup for="easy"></sup>
+                                </li>
+                                
+                                <li>
+                                    Cycle Detection<sup for="medium"></sup>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 3 &mdash; Stacks &amp; Queues
+
+                            <ul>
+                                
+                                <li>
+                                    Balanced Brackets<sup for="medium"></sup>
+                                </li>
+                                
+                                <li>
+                                    Queue using Two Stacks<sup for="medium"></sup>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 4 &mdash; Hash &amp; Maps
+
+                            <ul>
+                                
+                                <li>
+                                    Ice Cream Parlor<sup for="easy"></sup>
+                                </li>
+                                
+                                <li>
+                                    ~~Colorful Numbers<sup for="hard"></sup>~~
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 5 &mdash; Sorting Algorithms
+
+                            <ul>
+                                
+                                <li>
+                                    Insertion Sort I<sup for="easy"></sup>
+                                </li>
+                                
+                                <li>
+                                    Quicksort II<sup for="easy"></sup>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 6 &mdash; Trees
+
+                            <ul>
+                                
+                                <li>
+                                    Binary Search Tree: Insertion<sup for="easy"></sup>
+                                </li>
+                                
+                                <li>
+                                    Tree: Height of a Binary Tree<sup for="easy"></sup>
+                                </li>
+                                
+                                <li>
+                                    QHEAP1<sup for="easy"></sup>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 7 &mdash; Graphs (DFS &amp; BFS)
+
+                            <ul>
+                                
+                                <li>
+                                    Breadth First Search: Shortest Reach<sup for="medium"></sup>
+                                </li>
+                                
+                                <li>
+                                    Snakes and Ladders: The Quickest Way Up<sup for="medium"></sup>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li>
+                            Topic 8 &mdash; Recursion
+
+                            <ul>
+                                
+                                <li>
+                                    Fibonacci Numbers<sup for="easy"></sup>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    </ul>
+                      
+                </details>
+                
+            </blockquote>
+            
+            <h2>Official listing</h2>
+            
+            <table>
+                  
+                <thead>
+                        
+                    <tr>
+                              <th style="text-align: center;">Algorithms</th>
+      <th style="text-align: center;">Data Structures</th>
+    
+                    </tr>
+                      
+                </thead>
+                  
+                <tbody>
+                        
+                    <tr>
+                              <td>
+        
+                            <ul>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/solve-me-first">
+              Solve Me First<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/simple-array-sum">
+              Simple Array Sum<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/compare-the-triplets">
+              Compare the Triplets<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/a-very-big-sum">
+              A Very Big Sum<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/diagonal-difference">
+              Diagonal Difference<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/plus-minus">
+              Plus Minus<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/staircase">
+              Staircase<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/mini-max-sum">
+              Mini-Max Sum<sup for="easy"></sup>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/birthday-cake-candles">
+              <b>
+                Birthday Cake Candles<sup for="easy"></sup>
+              </b>
+            </a>
+          
+                                </li>
+                                          
+                                <li>
+                                                Time Conversion<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Grading Students<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Apple and Orange<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Number Line Jumps<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Between Two Sets<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Breaking the Records<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Subarray Division<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Divisible Sum Pairs<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Migratory Birds<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Day of the Programmer<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Bill Division<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Sales by Match<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Drawing Book<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Counting Valleys<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Electronic Shop<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Cats and a Mouse<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Forming a Magic Square<sup for="medium"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Picking Numbers<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Climbing the Leaderboard<sup for="medium"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                The Hurdle Race<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/designer-pdf-viewer">
+              <b>
+                Designer PDF Viewer<sup for="easy"></sup>
+              </b>
+            </a>
+          
+                                </li>
+                                        
+                            </ul>
+                                  </td>
+      <td>
+        
+                            <ul>
+                                          
+                                <li>
+                                                Array - DS<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                2D Array - DS<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                Dynamic Array<sup for="easy"></sup>
+          
+                                </li>
+                                          
+                                <li>
+                                                <a href="https://hanggrian.github.io/grind-hackerrank/array-left-rotation">
+              <b>
+                Array Left Rotation<sup for="easy"></sup>
+              </b>
+            </a>
+          
+                                </li>
+                                        
+                            </ul>
+                                  </td>
+    
+                    </tr>
+                      
+                </tbody>
+                
+            </table>
+            
+            <h3>Java</h3>
             
             <ul>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/welcome-to-java">Welcome to Java!<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/welcome-to-java">Welcome to Java!<sup for="easy"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/java-if-else">Java If-Else<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/java-if-else">Java If-Else<sup for="easy"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/java-stdin-and-stdout-i">Java Stdin and Stdout I<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/java-stdin-and-stdout-i">Java Stdin and Stdout I<sup for="easy"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/java-stdin-and-stdout-ii">Java Stdin and Stdout II<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/java-stdin-and-stdout-ii">Java Stdin and Stdout II<sup for="easy"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/java-output-formatting">Java Output Formatting<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/java-output-formatting">Java Output Formatting<sup for="easy"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/java-loops-i">Java Loops I<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/java-loops-i">Java Loops I<sup for="easy"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/java-loops-ii">Java Loops II<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/java-loops-ii">Java Loops II<sup for="easy"></sup></a>
                 </li>
                 
             </ul>
             
-            <h2>Python</h2>
+            <h3>Python</h3>
             
             <ul>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/py-hello-world">Say "Hello, World!" With Python<sup>EASY</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/py-hello-world">Say "Hello, World!" With Python<sup for="easy"></sup></a>
                 </li>
                 
             </ul>
             
-            <h2>React</h2>
+            <h3>React</h3>
             
             <ul>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/item-list-manager">Item List Manager<sup>MEDIUM</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/item-list-manager">Item List Manager<sup for="medium"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/code-review-feedback">Code Review Feedback<sup>MEDIUM</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/code-review-feedback">Code Review Feedback<sup for="medium"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/react-article-sorting">Article Sorting<sup>HARD</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/react-article-sorting">Article Sorting<sup for="hard"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/react-contact-form">React Contact Form<sup>MEDIUM</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/react-contact-form">React Contact Form<sup for="medium"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/patient-medical-records">Patient Medical Records<sup>MEDIUM</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/patient-medical-records">Patient Medical Records<sup for="medium"></sup></a>
                 </li>
                 
                 <li>
-                    <a href="https://hanggrian.github.io/grind-hackerrank/blog-post">Blog Post<sup>MEDIUM</sup></a>
+                    <a href="https://hanggrian.github.io/grind-hackerrank/blog-post">Blog Post<sup for="medium"></sup></a>
                 </li>
                 
             </ul>

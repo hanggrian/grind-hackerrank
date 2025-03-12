@@ -26,65 +26,84 @@
             </p>
 
             <h1>
-                Java If-Else<sup style="color: rgb(32, 215, 97);">Easy</sup>
+                Compare the Triplets<sup style="color: rgb(32, 215, 97);">Easy</sup>
             </h1>
 
             <blockquote>
 
-                <p>In this challenge, we test your knowledge of using if-else conditional
-statements to automate decision-making processes. An if-else statement has the
-following logical flow:</p>
+                <p>Alice and Bob each created one problem for HackerRank. A reviewer rates the
+two challenges, awarding points on a scale from 1 to 100 for three categories:
+problem clarity, originality, and difficulty.</p>
 
-                <div style="background: white;">
-                      <img src="https://s3.amazonaws.com/hr-challenge-images/13689/1446563087-4ec019a919-332px-If-Then-Else-diagram.svg.png">
+                <p>The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and
+the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).</p>
 
-                </div>
+                <p>The task is to calculate their comparison points by comparing each category:</p>
+
+                <ul>
+
+                    <li>If a[i] &gt; b[i], then Alice is awarded 1 point.</li>
+
+                    <li>If a[i] &lt; b[i], then Bob is awarded 1 point.</li>
+
+                    <li>If a[i] = b[i], then neither person receives a point.</li>
+
+                </ul>
 
                 <p>
-                    <small>Source: <a href="https://en.wikipedia.org/wiki/Conditional_%28computer_programming%29">Wikipedia</a></small>
+                    <strong>Example</strong>
                 </p>
 
-                <p>
-                    <strong>Task</strong>
-                </p>
+                <p>a = [1, 2, 3]</p>
 
-                <p>Given an integer, \(n\), perform the following conditional actions:</p>
+                <p>b = [3, 2, 1]</p>
 
                 <ul>
 
                     <li>
-                        If \(n\) is odd, print <code>Weird</code>
+                        For elements <em>0</em>, Bob is awarded a point because a[0] &lt; b[0].
                     </li>
 
-                    <li>
-                        If \(n\) is even and in the inclusive range of <strong>2</strong> to <strong>5</strong>, print
-<code>Not Weird</code>
-                    </li>
+                    <li>For the equal elements a[1] and b[1], no points are earned.</li>
 
-                    <li>
-                        If \(n\) is even and in the inclusive range of <strong>6</strong> to <strong>20</strong>, print
-<code>Weird</code>
-                    </li>
-
-                    <li>
-                        If \(n\) is even and greater than <strong>20</strong>, print <code>Not Weird</code>
-                    </li>
+                    <li>Finally, for elements 2, a[2] &gt; b[2] so Alice receives a point.</li>
 
                 </ul>
 
-                <p>Complete the stub code provided in your editor to print whether or not \(n\)
-is weird.</p>
+                <p>The return array is [1, 1] with Alice's score first and Bob's second.</p>
+
+                <p>
+                    <strong>Function Description</strong>
+                </p>
+
+                <p>Complete the function compareTriplets with the following parameter(s):</p>
+
+                <ul>
+
+                    <li>int a[3]: Alice's challenge rating</li>
+
+                    <li>int b[3]: Bob's challenge rating</li>
+
+                </ul>
+
+                <p>Returns</p>
+
+                <ul>
+
+                    <li>int[2]: the first element is Alice's score and the second is Bob's score</li>
+
+                </ul>
 
             </blockquote>
 
             <ul>
 
                 <li>
-                    <a href="https://www.hackerrank.com/challenges/java-if-else/">Problem</a>
+                    <a href="https://www.hackerrank.com/challenges/compare-the-triplets/">Problem</a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/JavaIfElse.java">Solution</a>
+                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/algorithms/src/main/java/CompareTheTriplets.java">Solution</a>
                 </li>
 
             </ul>
