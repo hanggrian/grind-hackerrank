@@ -8,9 +8,7 @@ import {Article, ARTICLES} from '../src/react-article-sorting-data';
 describe(
     'ReactArticleSorting',
     () => {
-      beforeEach(() => {
-        render(<ReactArticleSorting articles={ARTICLES}/>);
-      });
+      beforeEach(() => render(<ReactArticleSorting articles={ARTICLES}/>));
 
       const testIds = {
         mostUpvotedLink: 'most-upvoted-link',

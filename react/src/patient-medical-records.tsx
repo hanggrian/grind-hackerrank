@@ -97,11 +97,10 @@ function Records(
                   <td>{i + 1}</td>
                   <td>
                     {
-                      new Date(data.timestamp)
-                          .toLocaleString(
-                              'en-US',
-                              {day: '2-digit', month: '2-digit', year: 'numeric'},
-                          )
+                      new Date(data.timestamp).toLocaleString(
+                          'en-US',
+                          {day: '2-digit', month: '2-digit', year: 'numeric'},
+                      )
                     }
                   </td>
                   <td>{data.diagnosis.name}</td>

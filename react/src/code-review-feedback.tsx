@@ -2,7 +2,13 @@ import {JSX, useState} from 'react';
 import './code-review-feedback.css';
 
 export default function CodeReviewFeedback(): JSX.Element {
-  const CATEGORIES = ['Readability', 'Performance', 'Security', 'Documentation', 'Testing'];
+  const CATEGORIES: string[] = [
+    'Readability',
+    'Performance',
+    'Security',
+    'Documentation',
+    'Testing',
+  ];
 
   return (
       <>

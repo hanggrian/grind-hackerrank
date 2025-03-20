@@ -10,9 +10,7 @@ const REGEX_DATE: RegExp = /(\d{2}\/\d{2}\/\d{4})/;
 describe(
     'PetientMedicalRecords',
     () => {
-      beforeEach(() => {
-        render(<PetientMedicalRecords/>);
-      });
+      beforeEach(() => render(<PetientMedicalRecords/>));
 
       it(
           'Test Initial Loading of the App',

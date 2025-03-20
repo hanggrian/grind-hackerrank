@@ -7,9 +7,7 @@ import CodeReviewFeedback from '../src/code-review-feedback';
 describe(
     'CodeReviewFeedback',
     () => {
-      beforeEach(() => {
-        render(<CodeReviewFeedback/>);
-      });
+      beforeEach(() => render(<CodeReviewFeedback/>));
 
       describe(
           'Initial Page Rendering Tests',

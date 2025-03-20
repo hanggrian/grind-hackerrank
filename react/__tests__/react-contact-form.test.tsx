@@ -7,9 +7,7 @@ import ReactContactForm from '../src/react-contact-form';
 describe(
     'ReactContactForm',
     () => {
-      beforeEach(() => {
-        render(<ReactContactForm/>);
-      });
+      beforeEach(() => render(<ReactContactForm/>));
 
       it(
           'displays error message when fields are empty and submit is clicked',

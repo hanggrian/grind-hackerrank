@@ -60,15 +60,13 @@ function Articles({articles}: { articles: Article[] }): JSX.Element {
           </thead>
           <tbody>
           {
-            articles.map((article, index) => {
-              return (
-                  <tr data-testid='article' key={index}>
-                    <td data-testid='article-title'>{article.title}</td>
-                    <td data-testid='article-upvotes'>{article.upvotes}</td>
-                    <td data-testid='article-date'>{article.date}</td>
-                  </tr>
-              );
-            })
+            articles.map((article, index) => (
+                <tr data-testid='article' key={index}>
+                  <td data-testid='article-title'>{article.title}</td>
+                  <td data-testid='article-upvotes'>{article.upvotes}</td>
+                  <td data-testid='article-date'>{article.date}</td>
+                </tr>
+            ))
           }
           </tbody>
         </table>
