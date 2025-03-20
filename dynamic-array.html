@@ -26,32 +26,79 @@
             </p>
 
             <h1>
-                Welcome to Java!<sup style="color: rgb(32, 215, 97);">Easy</sup>
+                Dynamic Array<sup style="color: rgb(32, 215, 97);">Easy</sup>
             </h1>
 
             <blockquote>
 
-                <p>Welcome to the world of Java! In this challenge, we practice printing to
-stdout.</p>
+                <ul>
 
-                <p>The code stubs in your editor declare a Solution class and a main method.
-Complete the main method by copying the two lines of code below and pasting
-them inside the body of your main method.</p>
+                    <li>Declare a 2-dimensional array, \(arr\), with \(n\) empty arrays, all
+zero-indexed.</li>
 
-                <pre><code class="language-java">System.out.println("Hello, World.");
-System.out.println("Hello, Java.");
-</code></pre>
+                    <li>Declare an integer, \(lastAnswer\), and initialize it to \(0\).</li>
+
+                </ul>
+
+                <p>You need to process two types of queries:</p>
+
+                <ol>
+
+                    <li>
+                        Query: \(1 x y\)
+
+                        <ul>
+
+                            <li>Compute \(idx = (x \oplus lastAnswer)\).</li>
+
+                            <li>Append the integer \(y\) to \(arr[idx]\).</li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        Query: \(2 x y\)
+
+                        <ul>
+
+                            <li>Compute \(idx = (x \oplus lastAnswer)\).</li>
+
+                            <li>Set \(lastAnswer = arr[idx]|y % size(arr[idx])\)</li>
+
+                            <li>Store the new value of \(lastAnswer\) in an answers array.</li>
+
+                        </ul>
+
+                    </li>
+
+                </ol>
+
+                <p>
+                    <strong>Notes:</strong>
+                </p>
+
+                <ul>
+
+                    <li>\(\oplus\) is the bitwise XOR operation, which corresponds to the ^
+operator in most languages. Learn more about it on Wikipedia.</li>
+
+                    <li>\(%\) is the modulo operator.</li>
+
+                    <li>Finally, \(size(arr[idx])\) is the number of elements in \(arr[idx]\).</li>
+
+                </ul>
 
             </blockquote>
 
             <ul>
 
                 <li>
-                    <a href="https://www.hackerrank.com/challenges/welcome-to-java/">Problem</a>
+                    <a href="https://www.hackerrank.com/challenges/dynamic-array/">Problem</a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/java/src/main/java/WelcomeToJava.java">Solution</a>
+                    <a href="https://github.com/hanggrian/grind-hackerrank/blob/main/algorithms/src/main/java/ds/DynamicArray.java">Solution</a>
                 </li>
 
             </ul>
