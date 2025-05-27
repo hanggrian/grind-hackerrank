@@ -22,7 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": [
-    "react/src"
-  ]
+  "include": ["react"]
 }

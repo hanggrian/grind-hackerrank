@@ -18,23 +18,24 @@
     "build": "tsc -b && vite build",
     "lint": "eslint react/**/*.tsx",
     "preview": "vite preview",
-    "test": "vitest --run react/__tests__/*.tsx",
-    "coverage": "vitest run --coverage react/__tests__/*.tsx"
+    "test": "vitest --run react/__tests__",
+    "coverage": "vitest run --coverage react/__tests__ --reporter=junit --outputFile=test-report.junit.xml"
   },
   "dependencies": {
-    "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^16.0.0",
     "jsdom": "^26.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.25.0",
-    "vitest": "^3.0.8",
-    "vitest-dom": "^0.1.1"
+    "vite": "^6.3.4"
   },
   "devDependencies": {
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.25.0",
+    "vitest": "^3.0.8",
+    "vitest-dom": "^0.1.1",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "@babel/preset-typescript": "^7.26.0",

@@ -24,3 +24,6 @@ ij_java_names_count_to_use_import_on_demand = 99
 ij_continuation_indent_size = 4
 ij_javascript_imports_wrap = off
 ij_typescript_imports_wrap = off
+
+[*.py]
+ij_python_continuation_indent_size = 4

@@ -13,7 +13,7 @@ jobs:
     executor: linux
     steps:
       - checkout
-      - run: ./gradlew checkstyleMain checkstyleTest test jacocoTestReport
+      - run: ./gradlew check jacocoTestReport
       - run: pip install -r requirements.txt && pytest --cov .
       - run: npm install && npm test && npm run coverage
       - codecov/upload
